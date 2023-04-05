@@ -5,5 +5,6 @@ export default async function handler(req, res) {
   await connectDatabase();
   if (req.method === "GET") {
     getAllUsers(req, res);
+  } else if (req.method === "POST") {
   }
 }
